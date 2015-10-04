@@ -11,21 +11,21 @@
     </div>
   <% end %>
   <h1>Welcome to Kumpear!</h1>
-  <p>"Don't go away without giving us your name and email, so we can notify you of our launch"</p>
+  <p>Don't go away without giving us your name and email, so we can notify you of our launch</p>
 
   <div class="field">
     <%= f.label :first_name %><br>
-    <%= f.text_area :first_name %>
+    <%= f.text_field :first_name %>
   </div>
   <div class="field">
     <%= f.label :last_name %><br>
-    <%= f.text_area :last_name %>
+    <%= f.text_field :last_name %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
     <%= f.text_area :email %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Submit" %>
   </div>
 <% end %>
