@@ -10,22 +10,42 @@
       </ul>
     </div>
   <% end %>
-  <h1>Welcome to Kumpear!</h1>
-  <p>Don't go away without giving us your name and email, so we can notify you of our launch</p>
+  <head>
 
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_area :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Submit" %>
-  </div>
+  	<!-- <title>kumpear</title>
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'> -->
+
+  </head>
+<body>
+
+  <section id="intro">
+
+    <img src="/images/logo.png" width="250px">
+    <div id="description">Kumpear is the Product Matchmaker. It is a product comparison app that narrows down your options to get the most compatible product in your hands faster.</div>
+    <div id="signup">
+
+        <%= f.text_field :name, :class => "field", :placeholder => "NAME" %>
+
+        <%= f.text_field :email, :class => "field", :placeholder => "EMAIL" %>
+
+
+        <%= f.submit "SUBMIT", :class => "button" %>
+    </div>
+
+  </section>
+
+  <section id="orange">
+
+    <img src="/images/search-screenshot.png" width="300px">
+    <img src="/images/results-screenshot.png" width="300px">
+    <img src="/images/kumpear-screenshot.png" width="300px">
+    <footer>© 2015</footer>
+
+  </section>
+
+</body>
+
+
+
 <% end %>
