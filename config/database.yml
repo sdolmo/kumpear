@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  database: users_development
+  pool: 5
+  timeout: 5000
+  encoding: unicode
+
+test:
+  adapter: postgresql
+  database: users_test
+  pool: 5
+  timeout: 5000
+  encoding: unicode
+
+production:
+  adapter: postgresql
+  database: users_production
+  pool: 5
+  timeout: 5000
+  encoding: unicode# PostgreSQL. Versions 8.2 and up are supported.
